@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>BMW M4 GT3 - Spa 95 Min Race Guide</title>
+    <style>
+        body {
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+            background-color: #121214;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            background: linear-gradient(145deg, #1e1e24, #18181c);
+            width: 100%;
+            max-width: 650px;
+            border-radius: 16px;
+            border: 1px solid #2a2a35;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            padding: 25px;
+            box-sizing: border-box;
+        }
+        .header {
+            border-bottom: 2px solid #0066b1;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .title {
+            font-size: 22px;
+            font-weight: 800;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .badge {
+            background-color: #e52521;
+            color: white;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+        .meta-info {
+            display: flex;
+            gap: 15px;
+            background: #252530;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+        .meta-item { color: #a0a0b0; }
+        .meta-item span { color: #fff; font-weight: bold; }
+        
+        h2 {
+            font-size: 15px;
+            color: #0066b1;
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .stint-box {
+            background: #22222c;
+            border: 1px solid #333344;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+        }
+        .stint-box.active { border-color: #0066b1; }
+        .stint-title { font-size: 12px; color: #888; font-weight: bold; }
+        .stint-fuel { font-size: 18px; color: #22c55e; font-weight: 800; margin: 4px 0; }
+        .stint-note { font-size: 11px; color: #aaa; }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .info-block {
+            background: #1a1a22;
+            border-radius: 8px;
+            padding: 12px;
+            border-left: 3px solid #0066b1;
+        }
+        .info-block.warn { border-left-color: #e52521; }
+        
+        ul { margin: 0; padding-left: 18px; font-size: 12px; color: #ccc; }
+        li { margin-bottom: 6px; }
+
+        .footer {
+            margin-top: 25px;
+            text-align: center;
+            font-size: 11px;
+            color: #666;
+            border-top: 1px solid #222;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="header">
+        <div class="title">🏎️ BMW M4 GT3 | SPA 95M</div>
+        <div class="badge">Live Суддівство</div>
+    </div>
+
+    <div class="meta-info">
+        <div class="meta-item">Темп: <span>~2:24.0</span></div>
+        <div class="meta-item">Кола: <span>~39-40</span></div>
+        <div class="meta-item">Витрата: <span>2.8 л/коло</span></div>
+        <div class="meta-item">Пит-стопи: <span>2 обов'язкові</span></div>
+    </div>
+
+    <h2>⛽ Стратегія заправки (3 стенти)</h2>
+    <div class="timeline">
+        <div class="stint-box active">
+            <div class="stint-title">СТЕНТ 1 (0-31 хв)</div>
+            <div class="stint-fuel">43 - 45 Л</div>
+            <div class="stint-note">Старт з легким баком</div>
+        </div>
+        <div class="stint-box">
+            <div class="stint-title">ПИТ 1 ➔ СТЕНТ 2</div>
+            <div class="stint-fuel">+ 43 - 45 Л</div>
+            <div class="stint-note">Зміна шин (PSI 26.8)</div>
+        </div>
+        <div class="stint-box">
+            <div class="stint-title">ПИТ 2 ➔ СТЕНТ 3</div>
+            <div class="stint-fuel">+ 43 - 45 Л</div>
+            <div class="stint-note">Зміна шин (+0.2 PSI)</div>
+        </div>
+    </div>
+
+    <div class="grid-2">
+        <div class="info-block">
+            <h2 style="margin-top:0;">⚙️ Сетапом & Налаштування</h2>
+            <ul>
+                <li><b>TC (Traction):</b> 3 або 4</li>
+                <li><b>ABS:</b> 3 або 4</li>
+                <li><b>Brake Bias:</b> 56.0% - 57.0%</li>
+                <li><b>Захід сонця:</b> На Пит-2 додавай <b>+0.2 PSI</b> (траса охолоджується!).</li>
+            </ul>
+        </div>
+        <div class="info-block warn">
+            <h2 style="margin-top:0; color:#e52521;">⚠️ Правило 85% & Правила</h2>
+            <ul>
+                <li><b>Класифікація:</b> Проїдь мінімум <b>34-35 кіл</b>.</li>
+                <li><b>НЕ ВИХОДЬ при аварії!</b> Лагодься в боксах і доїжджай за очками.</li>
+                <li><b>Захист:</b> Лише 1 зміна траєкторії на прямій.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>⏱️ Ключові точки для покращення часу (2:24 ➔ 2:21)</h2>
+    <ul>
+        <li><b>Eau Rouge / Raidillon:</b> Не гальмуй! Проходь майже в підлогу, розвантажуй кермо на підйомі.</li>
+        <li><b>Pouhon:</b> Тільки легке скидання газу для завантаження передка, без повного гальмування.</li>
+        <li><b>Bus Stop (Шикана):</b> Атакуй високі поребрики — BMW це чудово ковтає.</li>
+    </ul>
+
+    <div class="footer">
+        Assetto Corsa Competizione • Spa-Francorchamps Strategy Guide
+    </div>
+</div>
+
+</body>
+</html>
