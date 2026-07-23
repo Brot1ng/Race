@@ -2,7 +2,8 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>BMW M4 GT3 - Spa 95 Min Race Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW M4 GT3 - Spa 95M Race Guide</title>
     <style>
         body {
             font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
@@ -16,7 +17,7 @@
         .card {
             background: linear-gradient(145deg, #1e1e24, #18181c);
             width: 100%;
-            max-width: 650px;
+            max-width: 700px;
             border-radius: 16px;
             border: 1px solid #2a2a35;
             box-shadow: 0 10px 30px rgba(0,0,0,0.8);
@@ -32,7 +33,7 @@
             align-items: center;
         }
         .title {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 800;
             color: #fff;
             text-transform: uppercase;
@@ -48,19 +49,21 @@
             text-transform: uppercase;
         }
         .meta-info {
-            display: flex;
-            gap: 15px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
             background: #252530;
-            padding: 10px 15px;
+            padding: 12px;
             border-radius: 8px;
-            font-size: 13px;
+            font-size: 12px;
             margin-bottom: 20px;
+            text-align: center;
         }
         .meta-item { color: #a0a0b0; }
-        .meta-item span { color: #fff; font-weight: bold; }
+        .meta-item span { color: #fff; font-weight: bold; display: block; font-size: 14px; margin-top: 2px;}
         
         h2 {
-            font-size: 15px;
+            font-size: 14px;
             color: #0066b1;
             text-transform: uppercase;
             margin-top: 20px;
@@ -85,9 +88,9 @@
             text-align: center;
         }
         .stint-box.active { border-color: #0066b1; }
-        .stint-title { font-size: 12px; color: #888; font-weight: bold; }
-        .stint-fuel { font-size: 18px; color: #22c55e; font-weight: 800; margin: 4px 0; }
-        .stint-note { font-size: 11px; color: #aaa; }
+        .stint-title { font-size: 11px; color: #888; font-weight: bold; }
+        .stint-fuel { font-size: 17px; color: #22c55e; font-weight: 800; margin: 4px 0; }
+        .stint-note { font-size: 10px; color: #aaa; }
 
         .grid-2 {
             display: grid;
@@ -101,9 +104,10 @@
             border-left: 3px solid #0066b1;
         }
         .info-block.warn { border-left-color: #e52521; }
+        .info-block.speed { border-left-color: #eab308; }
         
-        ul { margin: 0; padding-left: 18px; font-size: 12px; color: #ccc; }
-        li { margin-bottom: 6px; }
+        ul { margin: 0; padding-left: 16px; font-size: 12px; color: #ccc; }
+        li { margin-bottom: 5px; }
 
         .footer {
             margin-top: 25px;
@@ -119,18 +123,18 @@
 
 <div class="card">
     <div class="header">
-        <div class="title">🏎️ BMW M4 GT3 | SPA 95M</div>
+        <div class="title">🏎️ BMW M4 GT3 | SPA 95M GUIDE</div>
         <div class="badge">Live Суддівство</div>
     </div>
 
     <div class="meta-info">
-        <div class="meta-item">Темп: <span>~2:24.0</span></div>
-        <div class="meta-item">Кола: <span>~39-40</span></div>
-        <div class="meta-item">Витрата: <span>2.8 л/коло</span></div>
-        <div class="meta-item">Пит-стопи: <span>2 обов'язкові</span></div>
+        <div class="meta-item">Цільовий темп:<span>~2:24.0</span></div>
+        <div class="meta-item">Всього кіл:<span>~39-40</span></div>
+        <div class="meta-item">Витрата:<span>2.8 л/коло</span></div>
+        <div class="meta-item">Пит-стопи:<span>2 Обов'язкові</span></div>
     </div>
 
-    <h2>⛽ Стратегія заправки (3 стенти)</h2>
+    <h2>⛽ Стратегія заправки та Пит-стопів</h2>
     <div class="timeline">
         <div class="stint-box active">
             <div class="stint-title">СТЕНТ 1 (0-31 хв)</div>
@@ -150,29 +154,40 @@
     </div>
 
     <div class="grid-2">
-        <div class="info-block">
-            <h2 style="margin-top:0;">⚙️ Сетапом & Налаштування</h2>
+        <div class="info-block speed">
+            <h2 style="margin-top:0; color:#eab308;">🚦 Піт-Лейн & Швидкість</h2>
             <ul>
-                <li><b>TC (Traction):</b> 3 або 4</li>
-                <li><b>ABS:</b> 3 або 4</li>
-                <li><b>Brake Bias:</b> 56.0% - 57.0%</li>
-                <li><b>Захід сонця:</b> На Пит-2 додавай <b>+0.2 PSI</b> (траса охолоджується!).</li>
+                <li><b>Ліміт швидкості:</b> Суворо <b>50 км/год</b>.</li>
+                <li><b>Вхід у бокси:</b> Скидай швидкість ДО білої лінії входу і завчасно вмикай <b>Pit Limiter</b>.</li>
+                <li><b>Процедура заїзду:</b> 1-ша передача ➔ Зупинка у коробці ➔ Заглушити двигун (Engine Off).</li>
+                <li><b>Вихід з боксів:</b> Двигун ON ➔ Газ ➔ Вимикай Pit Limiter тільки ПОСЛЯ виходу з білої лінії.</li>
             </ul>
         </div>
+        
         <div class="info-block warn">
-            <h2 style="margin-top:0; color:#e52521;">⚠️ Правило 85% & Правила</h2>
+            <h2 style="margin-top:0; color:#e52521;">⚠️ Правила & Штрафи</h2>
             <ul>
-                <li><b>Класифікація:</b> Проїдь мінімум <b>34-35 кіл</b>.</li>
-                <li><b>НЕ ВИХОДЬ при аварії!</b> Лагодься в боксах і доїжджай за очками.</li>
-                <li><b>Захист:</b> Лише 1 зміна траєкторії на прямій.</li>
+                <li><b>Правило 85%:</b> Для заліку треба проїхати <b>34-35 кіл</b>. Не виходь при аварії!</li>
+                <li><b>Захист позиції:</b> Дозволено лише <b>1 зміну траєкторії</b> на прямій.</li>
+                <li><b>Обгони:</b> Винен завжди обгоняючий. Заходь "в базу" ДО входу в поворот.</li>
             </ul>
         </div>
     </div>
 
-    <h2>⏱️ Ключові точки для покращення часу (2:24 ➔ 2:21)</h2>
+    <div style="margin-top: 15px;" class="info-block">
+        <h2 style="margin-top:0;">⚙️ Сетап електроніки (BMW M4)</h2>
+        <ul>
+            <li><b>Traction Control (TC):</b> 3 або 4 (не дасть зірвати задок при ранньому газі)</li>
+            <li><b>ABS:</b> 3 або 4 (дозволяє тиснути гальма в підлогу)</li>
+            <li><b>Brake Bias (Баланс гальм):</b> 56.0% - 57.0% (зміщення наперед додасть стабільності)</li>
+            <li><b>Температура (Захід сонця):</b> На Пит-2 додавай <b>+0.2...0.3 PSI</b>, бо траса охолоне.</li>
+        </ul>
+    </div>
+
+    <h2>⏱️ Де скинути час (Темп 2:24 ➔ 2:21)</h2>
     <ul>
-        <li><b>Eau Rouge / Raidillon:</b> Не гальмуй! Проходь майже в підлогу, розвантажуй кермо на підйомі.</li>
-        <li><b>Pouhon:</b> Тільки легке скидання газу для завантаження передка, без повного гальмування.</li>
+        <li><b>Eau Rouge / Raidillon:</b> Майже "в підлогу". Головне — розвантажити кермо під час підйому.</li>
+        <li><b>Pouhon:</b> Не тисни гальма в підлогу! Тільки легке скидання газу для завантаження передка.</li>
         <li><b>Bus Stop (Шикана):</b> Атакуй високі поребрики — BMW це чудово ковтає.</li>
     </ul>
 
